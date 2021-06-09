@@ -1,9 +1,9 @@
 fun sortedSquares(nums: IntArray): IntArray {
     val n = nums.size
-    var power = nums.map { e -> e * e }.toIntArray()
+    val power = nums.map { e -> e * e }.toIntArray()
     if (n <= 1)
         return power
-    var result = IntArray(n)
+    val result = IntArray(n)
     var i = 0
     while (i < n - 1 && power[i] >= power[i + 1])
         i++
@@ -42,8 +42,9 @@ fun sortedSquares(nums: IntArray): IntArray {
 }
 
 
-fun main(args: Array<String>) {
+fun main() {
     val nums = intArrayOf(-4, -4, -3)
     val result = sortedSquares(nums)
+    println("hello")
     println(result.toList())
 }
