@@ -46,5 +46,6 @@ fun main() {
     val nums = intArrayOf(-4, -4, -3)
     val result = sortedSquares(nums)
     println("hello")
+    println("hello")
     println(result.toList())
 }
